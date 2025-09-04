@@ -1,27 +1,191 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <title>Atlas Divin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href="index.html">atlas divin</a>
-      <nav>
+      <a class="header-logo" href="index.html">atlas divin</a>
+      <div class="header-burger-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_62_1890)">
+            <path
+              d="M4 6.5H20"
+              stroke="#515050"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 12.5H20"
+              stroke="#515050"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 18.5H16"
+              stroke="#515050"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_62_1890">
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(0 0.5)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <nav class="header-nav">
         <ul>
           <li><a href="https://www.google.com">Mes favoris</a></li>
           <li><a href="https://www.google.com">Dieu du jour</a></li>
           <li><a href="https://www.google.com">Mes favoris</a></li>
         </ul>
-        <button>Dark/Light Mode</button>
+        <div class="header-nav-mode">
+          <button type="button" id="dark-mode-btn" class="header-dark-mode-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_2001_1536)">
+                <path
+                  d="M12 3C12.132 3 12.263 3 12.393 3C11.1084 4.19371 10.2826 5.79985 10.0593 7.53923C9.83602 9.2786 10.2293 11.0412 11.1708 12.5207C12.1122 14.0002 13.5424 15.103 15.2126 15.6375C16.8829 16.1719 18.6876 16.1042 20.313 15.446C19.6878 16.9505 18.6658 18.257 17.3562 19.2263C16.0466 20.1955 14.4985 20.791 12.8769 20.9494C11.2554 21.1077 9.62129 20.823 8.14892 20.1254C6.67654 19.4279 5.42114 18.3437 4.51661 16.9886C3.61209 15.6335 3.09238 14.0583 3.01291 12.431C2.93345 10.8037 3.29721 9.1853 4.0654 7.74852C4.83359 6.31174 5.97739 5.11043 7.37479 4.27274C8.77219 3.43505 10.3708 2.9924 12 2.992V3Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2001_1536">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="light-mode-btn"
+            class="header-light-mode-btn"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_85_2352)">
+                <path
+                  d="M14.828 14.828C15.2101 14.459 15.5148 14.0176 15.7244 13.5296C15.9341 13.0416 16.0444 12.5167 16.049 11.9856C16.0537 11.4545 15.9525 10.9278 15.7513 10.4362C15.5502 9.94459 15.2532 9.49798 14.8776 9.12241C14.5021 8.74684 14.0554 8.44983 13.5639 8.2487C13.0723 8.04758 12.5456 7.94637 12.0144 7.95099C11.4833 7.9556 10.9584 8.06595 10.4704 8.27558C9.98241 8.48522 9.54103 8.78995 9.17204 9.17199C8.44341 9.9264 8.04023 10.9368 8.04935 11.9856C8.05846 13.0344 8.47914 14.0376 9.22077 14.7793C9.9624 15.5209 10.9656 15.9416 12.0144 15.9507C13.0632 15.9598 14.0736 15.5566 14.828 14.828V14.828Z"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.34296 17.657L4.92896 19.071"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.34296 6.34299L4.92896 4.92899"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.657 6.34299L19.071 4.92899"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.657 17.657L19.071 19.071"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 12H2"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 4V2"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 12H22"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 20V22"
+                  stroke="#BCBFC3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_85_2352">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
 
     <main>
       <h1><a href="https://www.google.com">Voir les dieux des panthéons</a></h1>
-      <section class="god-otd">
+      <section class="god-otd-section">
         <h2 class="god-otd-title">Dieu du jour</h2>
         <div class="god-otd-info">
           <h3 class="god-otd-name">Bacchus</h3>
@@ -76,6 +240,177 @@
               </clipPath>
             </defs>
           </svg>
+        </div>
+      </section>
+      <section class="popular-pantheons-section">
+        <div class="conatiner">
+          <div class="row">
+            <div class="col col-md-3">
+              <section class="popular-pantheons-filters">
+                <h4 class="popular-pantheons-title">Panthéons populaires</h4>
+                <ul>
+                  <li>
+                    <button>
+                      <a href="https://www.google.com">Panthéon Grec</a
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_49_435)">
+                          <path
+                            d="M5 12H19"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 16L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 8L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_49_435">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <button>
+                      <a href="https://www.google.com">Panthéon égyptien</a
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_49_435)">
+                          <path
+                            d="M5 12H19"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 16L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 8L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_49_435">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <button>
+                      <a href="https://www.google.com">Panthéon nordique</a
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_49_435)">
+                          <path
+                            d="M5 12H19"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 16L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 8L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_49_435">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <button>
+                      <a href="https://www.google.com">Panthéon romain</a
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_49_435)">
+                          <path
+                            d="M5 12H19"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 16L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15 8L19 12"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_49_435">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
         </div>
       </section>
     </main>
