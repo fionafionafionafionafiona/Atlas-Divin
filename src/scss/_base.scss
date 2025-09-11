@@ -45,12 +45,13 @@ html[data-theme="light"] {
   --background-components: #bcbfc3;
   --text-main: #515050;
   --text-secondary: #000000;
-}
-#light-mode-btn {
-  display: none;
-  border-radius: 4px;
-  border-right: 1px solid #515050;
-  background: #000;
+
+  #light-mode-btn {
+    display: none;
+    border-radius: 4px;
+    border-right: 1px solid #515050;
+    background: #000;
+  }
 }
 
 body {

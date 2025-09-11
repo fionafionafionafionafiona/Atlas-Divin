@@ -16,3 +16,12 @@ toggleLightModeBtn.addEventListener("click", function () {
   // l'attribut data-theme de la balise <html> prenne pour valeur "light"
   document.querySelector("html").setAttribute("data-theme", "light");
 });
+
+var headerBurgerMenu = document.querySelector(".header-burger-menu");
+var headerNav = document.querySelector(".header-nav");
+
+var toggleMenu = function toggleMenu() {
+  headerNav.classList.toggle("is-active");
+};
+
+headerBurgerMenu.addEventListener("click", toggleMenu);
