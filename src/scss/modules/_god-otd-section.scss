@@ -1,0 +1,43 @@
+.god-otd-section {
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 2px solid var(--text-main);
+  margin: 64px 0px 40px;
+  font-size: 20px;
+}
+
+.god-otd-title {
+  font-family: var(--font-caesar-dressing);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.god-otd-info {
+  gap: 4px;
+}
+
+.god-otd-name {
+  font-family: var(--font-caesar-dressing);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.god-otd-description {
+  padding-top: 16px;
+}
+
+.god-otd-cta {
+  padding-top: 24.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 17.5%;
+    font-family: var(--font-bubble-one);
+  }
+}

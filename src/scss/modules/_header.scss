@@ -1,6 +1,7 @@
 .header-logo {
   font-size: 40px;
   font-family: var(--font-caesar-dressing);
+  color: var(--text-secondary);
   text-transform: uppercase;
   width: 100%;
 }
@@ -11,6 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--background-components);
+  padding: 20px 80px;
 }
 .header-nav {
   display: none;

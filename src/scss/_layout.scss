@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h4,
+p {
+  color: var(--text-main);
+}
+
+h1 {
+  font-family: var(--font-caesar-dressing);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+main {
+  padding: 40px 80px;
+  background-color: var(--background);
+}
