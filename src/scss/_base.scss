@@ -20,14 +20,33 @@ html {
 }
 
 html[data-theme="dark"] {
+  --yellow: #f7f43e;
+  --blue: #a3d7ff;
+  --red: #f8a7a7;
+  --green: #76e5b5;
+  --background: #515050;
+  --background-components: #696a6c;
+  --text-main: #f7f6f6;
+  --text-secondary: #ffffff;
+
   #dark-mode-btn {
     display: none;
     border-radius: 4px;
-    border: 1px solid var(--Text-secondary, #000);
-    background: var(--Text-main, #515050);
+    border: 1px solid var(--text-secondary);
+    background: var(--text-main);
   }
 }
-html[data-theme="light"] #light-mode-btn {
+html[data-theme="light"] {
+  --yellow: #f8af27;
+  --blue: #279ef8;
+  --red: #f82727;
+  --green: #12965d;
+  --background: #ffffff;
+  --background-components: #bcbfc3;
+  --text-main: #515050;
+  --text-secondary: #000000;
+}
+#light-mode-btn {
   display: none;
   border-radius: 4px;
   border-right: 1px solid #515050;
