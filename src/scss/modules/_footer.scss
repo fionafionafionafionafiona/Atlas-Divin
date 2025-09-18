@@ -5,4 +5,48 @@ footer {
   align-items: flex-start;
   gap: 40px;
   align-self: stretch;
+  background: var(--background-components);
+  color: var(--text-secondary);
+  font-size: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  align-self: stretch;
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+  }
+  .second {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.footer-copyrights {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-top: 1px solid var(--text-secondary);
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer-nav {
+    .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 16px;
+    }
+  }
 }
