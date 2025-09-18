@@ -3,28 +3,32 @@
   font-family: var(--font-caesar-dressing);
   color: var(--text-secondary);
   text-transform: uppercase;
-  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
   align-self: stretch;
   background: var(--background-components);
   padding: 20px 80px;
   font-size: 20px;
   color: var(--text-secondary);
+  .header-logo-burger-menu {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
 .header-nav {
   display: none;
   flex-direction: column;
   padding: 20px 12px;
   align-items: flex-start;
-  gap: 10px;
   background: var(--background-components);
-
   gap: 32px;
   ul {
     display: flex;
@@ -38,30 +42,30 @@ header {
   pointer-events: auto;
   border-top: 1px solid var(--text-secondary);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 20px 0 0;
 }
 
 .header-nav-mode {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 0.5rem;
-}
-
-.header-mobile-bar {
-  display: block;
+  padding: 8px 12px 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--text-secondary);
+  background: var(--text-main);
 }
 
 @media (min-width: 768px) {
   header {
     flex-direction: row;
   }
-  .header-mobile-bar {
+  .header-burger-menu {
     display: none;
   }
-
   .header-nav {
     gap: 32px;
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
