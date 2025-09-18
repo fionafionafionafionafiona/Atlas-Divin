@@ -1,0 +1,48 @@
+.popular-pantheons-filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+
+  li {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  li:first-child {
+    background-color: var(--blue);
+  }
+  li:nth-child(2) {
+    background-color: var(--yellow);
+  }
+  li:nth-child(3) {
+    background-color: var(--green);
+  }
+  li:nth-child(4) {
+    background-color: var(--red);
+  }
+
+  button {
+    display: flex;
+    padding: 12px 8px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--background);
+    font-family: var(--font-caesar-dressing);
+    font-size: 20px;
+  }
+}

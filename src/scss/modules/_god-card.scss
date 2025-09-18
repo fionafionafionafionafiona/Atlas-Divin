@@ -1,14 +1,88 @@
+//DESKTOP//
+
 .god-card {
   display: flex;
-  width: 178.5px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid;
+  margin-top: 12px;
 }
 
-.god-img {
-  width: 100%;
+.greek {
+  border-color: var(--blue);
+  .god-name p {
+    color: var(--blue);
+  }
 }
-.god-save-button {
-  fill: var(--blue);
+
+.roman {
+  border-color: var(--red);
+  .god-name p {
+    color: var(--red);
+  }
+}
+
+.egyptian {
+  border-color: var(--yellow);
+  .god-name p {
+    color: var(--yellow);
+  }
+}
+
+.nordic {
+  border-color: var(--green);
+  .god-name p {
+    color: var(--green);
+  }
+}
+
+.god-img-name-save {
+  position: relative;
+
+  .god-img {
+    width: 100%;
+  }
+
+  .god-save-button {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+
+  .god-name {
+    padding: 8px 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--background);
+    font-family: var(--font-caesar-dressing);
+    font-size: 20px;
+  }
+}
+
+.god-pantheon-category {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+
+  .god-pantheon {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .god-category {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .god-card {
+    margin-top: 20px;
+  }
 }
