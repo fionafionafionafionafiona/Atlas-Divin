@@ -30,10 +30,10 @@ html[data-theme="dark"] {
   --text-secondary: #ffffff;
 
   #dark-mode-btn {
-    display: none;
     border-radius: 4px;
     border: 1px solid var(--text-secondary);
     background: var(--text-main);
+    display: none;
   }
 }
 html[data-theme="light"] {
@@ -47,10 +47,10 @@ html[data-theme="light"] {
   --text-secondary: #000000;
 
   #light-mode-btn {
-    display: none;
     border-radius: 4px;
-    border-right: 1px solid #515050;
-    background: #000;
+    border: 1px solid var(--text-secondary);
+    background: var(--text-main);
+    display: none;
   }
 }
 

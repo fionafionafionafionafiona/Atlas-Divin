@@ -1,0 +1,14 @@
+.god-card {
+  display: flex;
+  width: 178.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.god-img {
+  width: 100%;
+}
+.god-save-button {
+  fill: var(--blue);
+}

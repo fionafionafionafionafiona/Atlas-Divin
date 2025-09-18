@@ -13,6 +13,8 @@ header {
   align-items: center;
   background: var(--background-components);
   padding: 20px 80px;
+  font-size: 20px;
+  color: var(--text-secondary);
 }
 .header-nav {
   display: none;
