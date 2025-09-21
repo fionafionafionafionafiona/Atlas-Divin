@@ -10,6 +10,13 @@
   border-radius: 8px;
   border: 2px solid;
   margin-top: 12px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.god-card:hover {
+  border-style: double;
+  border-width: 10px;
 }
 
 .greek {

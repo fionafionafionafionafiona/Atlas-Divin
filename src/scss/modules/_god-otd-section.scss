@@ -41,4 +41,10 @@
     font-family: var(--font-bubble-one);
     color: var(--text-main);
   }
+  button {
+    transition: 0.5s;
+  }
+  button:hover {
+    transform: scale(105%);
+  }
 }

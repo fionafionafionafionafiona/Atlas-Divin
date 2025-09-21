@@ -1,3 +1,8 @@
+.header-logo-burger-menu {
+  padding: 20px 12px;
+  align-items: center;
+}
+
 .header-logo {
   font-size: 40px;
   font-family: var(--font-caesar-dressing);
@@ -14,9 +19,12 @@ header {
   align-items: right;
   align-self: stretch;
   background: var(--background-components);
-  padding: 20px 80px;
   font-size: 20px;
   color: var(--text-secondary);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
   .header-logo-burger-menu {
     display: flex;
     justify-content: space-between;
@@ -59,6 +67,8 @@ header {
 @media (min-width: 768px) {
   header {
     flex-direction: row;
+    padding: 20px 80px;
+    position: unset;
   }
   .header-burger-menu {
     display: none;
@@ -73,6 +83,9 @@ header {
       display: flex;
       flex-direction: row;
       gap: 10px;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
 }

@@ -22,11 +22,22 @@ footer {
     align-items: flex-start;
     gap: 12px;
     flex: 1 0 0;
+    a:hover {
+      text-decoration: underline;
+    }
   }
   .second {
     display: flex;
     align-items: center;
     gap: 12px;
+    svg {
+      transition: 0.5s;
+    }
+    a:hover {
+      svg {
+        transform: scale(120%);
+      }
+    }
   }
 }
 

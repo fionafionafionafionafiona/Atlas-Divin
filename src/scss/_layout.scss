@@ -16,3 +16,26 @@ main {
   padding: 40px 80px;
   background-color: var(--background);
 }
+
+body {
+  font-family: var(--font-bubbler-one);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(107%);
+}
